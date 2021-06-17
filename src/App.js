@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import GlobalStyle from './GlobalStyle';
 
 function App() {
   return (
-    <div>
+    <Fragment>
+    <GlobalStyle />
+      <div>
       App Placeholder
-    </div>
+      </div>
+    </Fragment>
   );
 }
 
