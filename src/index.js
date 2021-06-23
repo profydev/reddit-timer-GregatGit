@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '@csstools/normalize.css'
+import '@csstools/normalize.css';
 import App from './App';
-import './index.css'
+import './index.css';
 
 // eslint-disable-next-line react/jsx-filename-extension
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,14 +1,26 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+
 import GlobalStyle from './GlobalStyle';
+import Home from './Pages/Home';
+import Search from './Pages/Search';
 
 function App() {
   return (
-    <Fragment>
-    <GlobalStyle />
-      <div>
-      App Placeholder
-      </div>
-    </Fragment>
+    <>
+      <GlobalStyle />
+      <div>App Placeholder</div>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
