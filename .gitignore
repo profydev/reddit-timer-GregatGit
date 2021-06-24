@@ -26,3 +26,5 @@ cypress/screenshots
 cypress/videos
 
 .eslintcache
+
+.prettierrc.js
